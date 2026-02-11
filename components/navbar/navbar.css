@@ -65,7 +65,7 @@
 }
 
 .navbar__dropdown button {
-    background-color: transparent;
+    background-color: var(--primary-color);
     outline: none;
     border: none;
     cursor: pointer;
@@ -75,6 +75,14 @@
 }
 
 .navbar__dropdown button:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar__dropdown button:focus {
+    background-color: transparent;
+}
+
+.navbar__dropdown.active button {
     background-color: var(--secondary-color);
 }
 
