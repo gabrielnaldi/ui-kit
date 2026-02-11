@@ -24,6 +24,8 @@
 
     width: 100%;
     height: 60px;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 #navbar ul {
@@ -34,8 +36,9 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 60px;
-    justify-content: center;
     overflow-x: scroll;
+    margin: 0 auto;
+    width: max-content;
 }
 
 .navbar__item span {
@@ -51,39 +54,32 @@
     height: 60px;
 }
 
-.navbar__item:hover {
+.navbar__item a:hover {
     background-color: var(--secondary-color);
 }
+
+.navbar__dropdown {}
 
 .navbar__dropdown span {
     display: none;
 }
 
-.navbar__dropdown ul {
-    display: none;
-}
-
-.navbar__dropdown.active ul {
-    display: block;
-}
-
 .navbar__dropdown button {
     background-color: transparent;
-    cursor: pointer;
     outline: none;
     border: none;
+    cursor: pointer;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 60px;
     width: 60px;
+    height: 60px;
 }
 
 .navbar__dropdown button:hover {
     background-color: var(--secondary-color);
 }
 
+.navbar__dropdown-submenu {
+    display: none;
+}
 
 
