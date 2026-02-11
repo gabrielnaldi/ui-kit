@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root {
+    --primary-color: #101727;
+    --secondary-color: #1e2942;
+    --text-color: #6a7181;
+    --hover-text-color: #f3f7f8;
+    --line-color: #f3f5f4;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#navbar {
+    font-family: "Merriweather", serif;
+    background-color: var(--primary-color);
+
+    position: fixed;
+    bottom: 0px;
+
+    width: 100%;
+    height: 60px;
+}
+
+#navbar ul {
+    list-style: none;
+}
+
+.navbar__menu {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 60px;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+.navbar__item span {
+    display: none;
+}
+
+.navbar__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+}
+
+.navbar__item:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar__dropdown span {
+    display: none;
+}
+
+.navbar__dropdown ul {
+    display: none;
+}
+
+.navbar__dropdown.active ul {
+    display: block;
+}
+
+.navbar__dropdown button {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    width: 60px;
+}
+
+.navbar__dropdown button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
