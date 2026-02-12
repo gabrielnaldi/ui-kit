@@ -1,4 +1,5 @@
-.navbar__dropdown {}
+.navbar__dropdown {
+}
 
 .navbar__dropdown span {
     display: none;
@@ -28,4 +29,33 @@
 
 .navbar__dropdown.active .navbar__dropdown-submenu {
     display: block;
+}
+
+@media(min-width: 768px) {
+    .navbar__dropdown span {
+        display: inline;
+    }
+
+    .navbar__dropdown button {
+        color: var(--text-color);
+        font-size: 16px;
+        border-radius: 12px;
+        padding: 0px 8px;
+
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+
+        width: 100%;
+
+    }
+
+    .navbar__dropdown svg {
+        fill: var(--text-color);
+    }
+
+    .navbar__dropdown:hover button, .navbar__dropdown:hover svg {
+        color: white;
+        fill: white;
+    }
 }

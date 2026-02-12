@@ -14,3 +14,32 @@
 .navbar__link a:hover {
     background-color: var(--secondary-color);
 }
+
+@media(min-width: 768px) {
+    .navbar__link {
+        width: 100%;
+    }
+
+    .navbar__link span {
+        display: inline;
+    }
+
+    .navbar__link svg {
+        fill: var(--text-color);
+    }
+
+    .navbar__link a {
+        border-radius: 12px;
+        color: var(--text-color);
+        justify-content: start;
+        text-decoration: none;
+        gap: 0 8px;
+        width: auto;
+        padding: 0 8px;
+    }
+
+    .navbar__link:hover a, .navbar__link:hover svg{
+        color: white;
+        fill: white;
+    }
+}

@@ -31,12 +31,44 @@
     overflow-y: hidden;
 }
 
-.navbar__menu {
+#navbar button {
+    font-family: "Merriweather", serif;
+}
+
+#navbar ul {
     list-style: none;
+}
+
+#navbar svg {
+    flex-shrink: 0;
+}
+
+.navbar__menu {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 60px;
     overflow-x: scroll;
     margin: 0 auto;
     width: max-content;
+}
+
+@media(min-width: 768px){
+    #navbar {
+        position: sticky;
+        bottom: unset;
+        left: 0ṕx;
+
+        width: 250px;
+        height: 100vh;
+    }
+
+    .navbar__menu {
+        grid-auto-flow: row;
+        grid-auto-columns: 1fr;
+        
+        padding: 16px 32px;
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
