@@ -1,0 +1,16 @@
+.navbar__item span {
+    display: none;
+}
+
+.navbar__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+}
+
+.navbar__item a:hover {
+    background-color: var(--secondary-color);
+}

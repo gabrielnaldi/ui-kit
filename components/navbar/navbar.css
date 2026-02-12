@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import './parts/navbar-dropdown.css';
+@import './parts/navbar-dropdown-submenu.css';
+@import './parts/navbar-link.css';
 
 :root {
     --primary-color: #101727;
@@ -28,104 +31,12 @@
     overflow-y: hidden;
 }
 
-#navbar ul {
-    list-style: none;
-}
-
 .navbar__menu {
+    list-style: none;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 60px;
     overflow-x: scroll;
     margin: 0 auto;
     width: max-content;
-}
-
-.navbar__item span {
-    display: none;
-}
-
-.navbar__item a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 60px;
-    height: 60px;
-}
-
-.navbar__item a:hover {
-    background-color: var(--secondary-color);
-}
-
-.navbar__dropdown {}
-
-.navbar__dropdown span {
-    display: none;
-}
-
-.navbar__dropdown button {
-    background-color: var(--primary-color);
-    outline: none;
-    border: none;
-    cursor: pointer;
-
-    width: 60px;
-    height: 60px;
-}
-
-.navbar__dropdown button:hover {
-    background-color: var(--secondary-color);
-}
-
-.navbar__dropdown button:focus {
-    background-color: transparent;
-}
-
-.navbar__dropdown.active button {
-    background-color: var(--secondary-color);
-}
-
-.navbar__dropdown.active .navbar__dropdown-submenu {
-    display: block;
-}
-
-
-.navbar__dropdown-submenu {
-    background-color: var(--secondary-color);
-    display: none;
-
-    position: fixed;
-    left: 0;
-    bottom: 60px;
-
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-.navbar__dropdown-submenu ul {
-    display: flex;
-
-    width: max-content;
-    margin: 0 auto;
-}
-
-.navbar__dropdown-submenu ul a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 600;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 60px;
-    min-width: 80px;
-    padding: 0 8px;
-}
-
-.navbar__dropdown-submenu ul a:hover {
-    background-color: var(--primary-color);
-    color: white;
 }
