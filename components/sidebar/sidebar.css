@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @import './parts/sidebar-header.css';
+@import './parts/sidebar-content.css';
+@import './parts/sidebar-link.css';
 
 :root {
     --dark-blue: #161A23;
@@ -43,56 +45,4 @@ ul {
     display: grid;
     grid-template-rows: auto 1fr auto;
     row-gap: 16px;
-}
-
-.sidebar__content {
-    padding: 24px 24px;
-
-    display: grid;
-    row-gap: 8px;
-}
-
-.sidebar__content-title {
-    color: var(--text-color);
-    letter-spacing: 0.4px;
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 0 12px;
-}
-
-.sidebar__links-container {
-    display: grid;
-    row-gap: 8px;
-}
-
-.sidebar__link {
-    border-radius: 8px;
-    color: var(--medium-gray);
-
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    padding: 10px 12px;
-}
-
-.sidebar__link:hover {
-    background-color: var(--dark-gray);
-    color: white;
-}
-
-.sidebar__link:hover svg {
-    fill: white;
-}
-
-.sidebar__link svg {
-    fill: var(--medium-gray);
-}
-
-.sidebar__link.active {
-    color: white;
-}
-
-.sidebar__link.active svg {
-    fill: white;
 }

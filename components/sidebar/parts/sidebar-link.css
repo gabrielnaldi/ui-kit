@@ -1,0 +1,36 @@
+.sidebar__links-container {
+    display: grid;
+    row-gap: 8px;
+}
+
+.sidebar__link {
+    border-radius: 8px;
+    color: var(--medium-gray);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 12px;
+}
+
+.sidebar__link:hover {
+    background-color: var(--dark-gray);
+    color: white;
+}
+
+.sidebar__link:hover svg {
+    fill: white;
+}
+
+.sidebar__link svg {
+    fill: var(--medium-gray);
+}
+
+.sidebar__link.active {
+    color: white;
+}
+
+.sidebar__link.active svg {
+    fill: white;
+}

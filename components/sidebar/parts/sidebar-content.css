@@ -1,0 +1,14 @@
+.sidebar__content {
+    padding: 24px 24px;
+
+    display: grid;
+    row-gap: 8px;
+}
+
+.sidebar__content-title {
+    color: var(--text-color);
+    letter-spacing: 0.4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 12px;
+}
