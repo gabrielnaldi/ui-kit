@@ -6,6 +6,8 @@
     --dark-gray: #2D2F39;
     --medium-gray: rgba(255, 255, 255, 0.5);
     --light-gray: rgba(255, 255, 255, 0.8);
+    --text-color: #757575;
+    --line-color: #f6f6f6;
 }
 
 * {
@@ -29,7 +31,6 @@ button {
     background-color: var(--dark-blue);
 
     width: 256px;
-    padding: 24px 0px;
 
     position: fixed;
     top: 0;
@@ -37,4 +38,20 @@ button {
 
     display: grid;
     grid-template-rows: auto 1fr auto;
+    row-gap: 16px;
+}
+
+.sidebar__content {
+    border: 1px solid red;
+    padding: 24px 24px;
+
+    display: grid;
+    row-gap: 8px;
+}
+
+.sidebar__content-title {
+    color: var(--text-color);
+    letter-spacing: 0.4px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
