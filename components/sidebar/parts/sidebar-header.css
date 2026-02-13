@@ -3,6 +3,9 @@
     grid-template-columns: 44px 1fr;
     column-gap: 16px;
     align-items: center;
+
+    position: relative;
+    padding: 0 24px;
 }
 
 .sidebar__profile-picture {
@@ -37,4 +40,24 @@
     font-weight: 500;
     letter-spacing: 1px;
     color: var(--medium-gray);
+}
+
+.sidebar__toggle {
+    background-color: white;
+    border: 1px solid var(--dark-blue);
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(180deg) translateX(-50%);
+}
+
+.sidebar__toggle svg {
+    fill: var(--dark-blue);
 }
